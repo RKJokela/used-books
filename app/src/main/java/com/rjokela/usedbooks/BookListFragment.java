@@ -29,10 +29,12 @@ public class BookListFragment extends Fragment {
     // views
     private TextView[] tvTitles;
     private ImageView[] ivCovers;
+    private ImageView[] ivFavorites;
 
     // view id's
     private int[] titleIds;
     private int[] coverIds;
+    private int[] favoriteIds;
     private int[] rowIds;
 
     public BookListFragment() {
@@ -80,6 +82,13 @@ public class BookListFragment extends Fragment {
         coverIds[3] = R.id.bookList_row4_image;
         coverIds[4] = R.id.bookList_row5_image;
 
+        favoriteIds = new int[5];
+        favoriteIds[0] = R.id.bookList_row1_favorite;
+        favoriteIds[1] = R.id.bookList_row2_favorite;
+        favoriteIds[2] = R.id.bookList_row3_favorite;
+        favoriteIds[3] = R.id.bookList_row4_favorite;
+        favoriteIds[4] = R.id.bookList_row5_favorite;
+
         rowIds = new int[5];
         rowIds[0] = R.id.bookList_row1;
         rowIds[1] = R.id.bookList_row2;
@@ -100,15 +109,22 @@ public class BookListFragment extends Fragment {
         // initialize all the arrays
         tvTitles = new TextView[NUM_ENTRIES];
         ivCovers = new ImageView[NUM_ENTRIES];
+        ivFavorites = new ImageView[NUM_ENTRIES];
 
         // loop once for each book
         for (int i = 0; i < NUM_ENTRIES; i++) {
             // set the title view
             tvTitles[i] = (TextView) getActivity().findViewById(titleIds[i]);
             tvTitles[i].setText(titles[i]);
+
             // set the cover image
             ivCovers[i] = (ImageView) getActivity().findViewById(coverIds[i]);
             ivCovers[i].setImageResource(bookCoverDrawables[i]);
+
+            // hide the favorite icons initially
+            ivFavorites[i] = (ImageView) getActivity().findViewById(favoriteIds[i]);
+            ivFavorites[i].setVisibility(View.INVISIBLE);
+
             // set the click listener for the row
             View row = getActivity().findViewById(rowIds[i]);
             final int finalI = i;
