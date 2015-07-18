@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Used Books</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bookList_instructions">Click on any row to view details.</string>
+
+    <string-array name="titles">
+        <item>Title 1</item>
+        <item>Title 2</item>
+        <item>Title 3</item>
+        <item>Title 4</item>
+        <item>Title 5</item>
+    </string-array>
+
+    <string-array name="authors">
+        <item>Author 1</item>
+        <item>Author 2</item>
+        <item>Author 3</item>
+        <item>Author 4</item>
+        <item>Author 5</item>
+    </string-array>
+
+    <string-array name="synopses">
+        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+    </string-array>
+</resources>

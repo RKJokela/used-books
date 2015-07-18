@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="prices">
+        <item>995</item>
+        <item>995</item>
+        <item>995</item>
+        <item>995</item>
+        <item>995</item>
+    </integer-array>
+
+    <integer-array name="coverDrawables">
+        <item>@drawable/ic_action_important</item>
+        <item>@drawable/ic_action_important</item>
+        <item>@drawable/ic_action_important</item>
+        <item>@drawable/ic_action_important</item>
+        <item>@drawable/ic_action_important</item>
+    </integer-array>
+
+    <integer-array name="titleIds">
+        <item>@id/bookList_row1_title</item>
+        <item>@id/bookList_row2_title</item>
+        <item>@id/bookList_row3_title</item>
+        <item>@id/bookList_row4_title</item>
+        <item>@id/bookList_row5_title</item>
+    </integer-array>
+
+    <integer-array name="coverIds">
+        <item>@id/bookList_row1_image</item>
+        <item>@id/bookList_row2_image</item>
+        <item>@id/bookList_row3_image</item>
+        <item>@id/bookList_row4_image</item>
+        <item>@id/bookList_row5_image</item>
+    </integer-array>
+
+    <integer-array name="rowIds">
+        <item>@id/bookList_row1</item>
+        <item>@id/bookList_row2</item>
+        <item>@id/bookList_row3</item>
+        <item>@id/bookList_row4</item>
+        <item>@id/bookList_row5</item>
+    </integer-array>
+</resources>
