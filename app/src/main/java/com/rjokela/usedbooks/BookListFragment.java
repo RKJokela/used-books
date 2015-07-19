@@ -77,11 +77,11 @@ public class BookListFragment extends Fragment {
         }
 
         bookCoverDrawables = new int[5];
-        bookCoverDrawables[0] = R.drawable.cover;
-        bookCoverDrawables[1] = R.drawable.cover;
-        bookCoverDrawables[2] = R.drawable.cover;
-        bookCoverDrawables[3] = R.drawable.cover;
-        bookCoverDrawables[4] = R.drawable.cover;
+        bookCoverDrawables[0] = R.drawable.cover1;
+        bookCoverDrawables[1] = R.drawable.cover2;
+        bookCoverDrawables[2] = R.drawable.cover3;
+        bookCoverDrawables[3] = R.drawable.cover4;
+        bookCoverDrawables[4] = R.drawable.cover5;
 
         titleIds = new int[5];
         titleIds[0] = R.id.bookList_row1_title;

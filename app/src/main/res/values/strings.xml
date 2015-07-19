@@ -9,26 +9,38 @@
     <string name="toastMsg">%1$s \"%2$s\" %3$s favorites</string>
 
     <string-array name="titles">
-        <item>Title 1</item>
-        <item>Title 2</item>
-        <item>Title 3</item>
-        <item>Title 4</item>
-        <item>Title 5</item>
+        <item>The Martian</item>
+        <item>A Game of Thrones</item>
+        <item>Gödel, Escher, Bach</item>
+        <item>The Hitchhiker\'s Guide to the Galaxy</item>
+        <item>Mountaineering: The Freedom of the Hills</item>
     </string-array>
 
     <string-array name="authors">
-        <item>Author 1</item>
-        <item>Author 2</item>
-        <item>Author 3</item>
-        <item>Author 4</item>
-        <item>Author 5</item>
+        <item>Andy Weir</item>
+        <item>George R. R. Martin</item>
+        <item>Douglas Hofstadter</item>
+        <item>Douglas Adams</item>
+        <item>Stephen M. Cox</item>
     </string-array>
 
     <string-array name="synopses">
-        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
-        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
-        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
-        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
-        <item>Lorem ipsum dolor sit amet. Synopsis of a book is here.</item>
+        <item>Six days ago, astronaut Mark Watney became one of the first people to walk on Mars.\n\n\
+            Now, he\'s sure he\'ll be the first person to die there.\n\n\
+            After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he\’s alive—and even if he could get word out, his supplies would be gone long before a rescue could arrive.\n\n\
+            Chances are, though, he won\'t have time to starve to death. The damaged machinery, unforgiving environment, or plain-old \"human error\" are much more likely to kill him first.\n\n\
+            But Mark isn\'t ready to give up yet. Drawing on his ingenuity, his engineering skills—and a relentless, dogged refusal to quit—he steadfastly confronts one seemingly insurmountable obstacle after the next. Will his resourcefulness be enough to overcome the impossible odds against him?</item>
+        <item>Here is the first volume in George R. R. Martin\’s magnificent cycle of novels that includes A Clash of Kings and A Storm of Swords. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin\’s stunning series is destined to stand as one of the great achievements of imaginative fiction.</item>
+        <item>Douglas Hofstadter’s book is concerned directly with the nature of \“maps\” or links between formal systems. However, according to Hofstadter, the formal system that underlies all mental activity transcends the system that supports it. If life can grow out of the formal chemical substrate of the cell, if consciousness can emerge out of a formal system of firing neurons, then so too will computers attain human intelligence. Gödel Escher and Bach is a wonderful exploration of fascinating ideas at the heart of cognitive science: meaning, reduction, recursion, and much more.</item>
+        <item>Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker\'s Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor. Together this dynamic pair begin a journey through space aided by quotes from The Hitchhiker\'s Guide ("A towel is about the most massively useful thing an interstellar hitchhiker can have") and a galaxy-full of fellow travelers: Zaphod Beeblebrox—the two-headed, three-armed ex-hippie and totally out-to-lunch president of the galaxy; Trillian, Zaphod\'s girlfriend (formally Tricia McMillan), whom Arthur tried to pick up at a cocktail party once upon a time zone; Marvin, a paranoid, brilliant, and chronically depressed robot; Veet Voojagig, a former graduate student who is obsessed with the disappearance of all the ballpoint pens he bought over the years. Where are these pens? Why are we born? Why do we die? Why do we spend so much time between wearing digital watches? For all the answers stick your thumb to the stars. And don\'t forget to bring a towel!.</item>
+        <item>The \"climber\'s bible\"—now updated in a new 7th edition\n\
+            From choosing equipment to how to tie a particular knot; from basic rappelling technique to planning an expedition; it\'s all here in this essential mountaineering reference.\n\
+            · More than 500,000 copies sold in previous editions\n\
+            · Written by a team of more than 40 experts\n\
+            · Fully revised to reflect evolution in mountaineering equipment and technique\n\
+            · Expanded Ten Essentials list\n\
+            · All 415 illustrations updated and redrawn\n\
+            · New chapters on: waterfall ice climbing and mixed climbing, physical conditioning, access and land stewardship, and much more\n\
+            · Now includes a glossary of climbing terms</item>
     </string-array>
 </resources>

@@ -2,11 +2,11 @@
 <resources>
 
     <integer-array name="prices">
-        <item>500</item>
-        <item>995</item>
-        <item>995</item>
-        <item>995</item>
-        <item>995</item>
+        <item>900</item>
+        <item>674</item>
+        <item>1356</item>
+        <item>600</item>
+        <item>733</item>
     </integer-array>
 
     <integer-array name="titleIds">
