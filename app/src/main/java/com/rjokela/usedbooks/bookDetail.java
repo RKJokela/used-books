@@ -1,9 +1,12 @@
 package com.rjokela.usedbooks;
 
+import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
 
 
 public class BookDetail extends ActionBarActivity {
@@ -12,6 +15,7 @@ public class BookDetail extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_detail);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
 

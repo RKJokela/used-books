@@ -105,11 +105,21 @@ public class BookDetailFragment extends Fragment {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent data = new Intent();
-                data.putExtra(FAVORITE, favorited);
-                getActivity().setResult(Activity.RESULT_OK, data);
+                setFavoriteResult();
                 getActivity().finish();
             }
         });
     }
+
+    private void setFavoriteResult() {
+        Intent data = new Intent();
+        data.putExtra(FAVORITE, favorited);
+        getActivity().setResult(Activity.RESULT_OK, data);
+    }
+
+//    @Override
+//    public void onStop() {
+//        setFavoriteResult();
+//        super.onStop();
+//    }
 }
