@@ -17,7 +17,8 @@
         android:id="@+id/bookList_instructions"
         android:gravity="center"
         android:background="@color/navy"
-        android:textColor="@color/silver"/>
+        android:textColor="@color/silver"
+        android:layout_marginBottom="@dimen/bookList_instructionsMarginBottom"/>
 
     <ScrollView
         android:layout_width="wrap_content"

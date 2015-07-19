@@ -16,4 +16,5 @@
     <dimen name="bookDetail_footerHeight">50dp</dimen>
     <dimen name="bookDetail_synopsisMarginTop">20sp</dimen>
     <dimen name="bookDetail_authorMarginTop">25dp</dimen>
+    <dimen name="bookList_instructionsMarginBottom">20dp</dimen>
 </resources>
