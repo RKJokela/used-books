@@ -95,6 +95,9 @@ public class BookDetailFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 favorited = isChecked;
+                ivFavorite.setVisibility(favorited ?
+                                            View.VISIBLE :
+                                            View.INVISIBLE);
             }
         });
 
