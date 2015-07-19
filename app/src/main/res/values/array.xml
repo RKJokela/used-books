@@ -9,14 +9,6 @@
         <item>995</item>
     </integer-array>
 
-    <integer-array name="coverDrawables">
-        <item>@drawable/ic_action_important</item>
-        <item>@drawable/ic_action_important</item>
-        <item>@drawable/ic_action_important</item>
-        <item>@drawable/ic_action_important</item>
-        <item>@drawable/ic_action_important</item>
-    </integer-array>
-
     <integer-array name="titleIds">
         <item>@id/bookList_row1_title</item>
         <item>@id/bookList_row2_title</item>

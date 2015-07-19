@@ -1,5 +1,8 @@
 package com.rjokela.usedbooks;
 
+import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +28,9 @@ public class BookListFragment extends Fragment {
     private String[] synopses;
     private double[] prices;
     private int[] bookCoverDrawables;
+
+    // stores favorites
+    private boolean[] favorited;
 
     // views
     private TextView[] tvTitles;
@@ -65,8 +71,16 @@ public class BookListFragment extends Fragment {
         synopses = getResources().getStringArray(R.array.synopses);
         Log.d(TAG, "Loaded " + synopses.length + " synopses");
 
-        bookCoverDrawables = getResources().getIntArray(R.array.coverDrawables);
-        Log.d(TAG, "Loaded " + bookCoverDrawables.length + " cover image ids");
+        for (boolean b : favorited = new boolean[5]) {
+            b = false;
+        }
+
+        bookCoverDrawables = new int[5];
+        bookCoverDrawables[0] = R.drawable.cover;
+        bookCoverDrawables[1] = R.drawable.cover;
+        bookCoverDrawables[2] = R.drawable.cover;
+        bookCoverDrawables[3] = R.drawable.cover;
+        bookCoverDrawables[4] = R.drawable.cover;
 
         titleIds = new int[5];
         titleIds[0] = R.id.bookList_row1_title;
@@ -139,5 +153,56 @@ public class BookListFragment extends Fragment {
 
     private void showDetail(int index) {
         Log.d(TAG, "Book #" + index + " was clicked");
+
+        Intent intent = new Intent(getActivity(), BookDetail.class);
+
+        // send all the book data to BookDetail activity
+        intent.putExtra(BookDetailFragment.TITLE, titles[index]);
+        intent.putExtra(BookDetailFragment.AUTHOR, authors[index]);
+        intent.putExtra(BookDetailFragment.PRICE, prices[index]);
+        intent.putExtra(BookDetailFragment.SYNOPSIS, synopses[index]);
+        intent.putExtra(BookDetailFragment.FAVORITE, favorited[index]);
+        intent.putExtra(BookDetailFragment.IMAGE, bookCoverDrawables[index]);
+
+        try {
+            startActivityForResult(intent, index);
+
+        } catch (ActivityNotFoundException e) {
+            Log.e(TAG, "ACTIVITY NOT FOUND: " + e.getMessage());
+            Log.e(TAG, "CLOSING NOW.");
+            getActivity().finish();
+        }
+    }
+
+    @Override
+    public void onActivityResult(int index, int resultCode, Intent data) {
+        if (resultCode == Activity.RESULT_OK) {
+            Log.d(TAG, "Book detail #" + index + " has returned");
+
+            // get whether user checked or unchecked the favorite box
+            boolean isFavorite = data.getBooleanExtra(BookDetailFragment.FAVORITE, false);
+            if (isFavorite != favorited[index]) {
+                favorited[index] = isFavorite;
+                String logAction;
+                if (isFavorite) {
+                    // user "favorited" the book
+                    logAction = " added ";
+                    ivFavorites[index].setVisibility(View.VISIBLE);
+                    showToast(index, true);
+                } else {
+                    // user "un-favorited" the book
+                    logAction = " removed ";
+                    ivFavorites[index].setVisibility(View.INVISIBLE);
+                    showToast(index, false);
+                }
+                Log.d(TAG, "Favorite was" + logAction + "on book #" + index);
+            }
+        } else {
+            Log.d(TAG, "ACTIVITY RESULT NOT OK!");
+        }
+    }
+
+    private void showToast(int index, boolean b) {
+        // TODO
     }
 }

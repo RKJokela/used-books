@@ -9,4 +9,9 @@
     <dimen name="padding_between_books">5dp</dimen>
     <dimen name="height_instructions">40dp</dimen>
     <dimen name="bookList_authorMarginTop">10dp</dimen>
+
+    <dimen name="bookDetail_imageHeight">180dp</dimen>
+    <dimen name="bookDetail_imageWidth">120dp</dimen>
+    <dimen name="bookDetail_imageMarginRight">40dp</dimen>
+    <dimen name="bookDetail_footerHeight">50dp</dimen>
 </resources>
