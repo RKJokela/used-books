@@ -6,6 +6,7 @@
     <string name="bookDetail_backButton">Back to List</string>
     <string name="bookDetail_addToFavorites">Add to Favorites</string>
     <string name="bookDetail_synopsisTitle">Synopsis:</string>
+    <string name="toastMsg">%1$s \"%2$s\" %3$s favorites</string>
 
     <string-array name="titles">
         <item>Title 1</item>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -203,6 +204,11 @@ public class BookListFragment extends Fragment {
     }
 
     private void showToast(int index, boolean b) {
-        // TODO
+        String fmt = getResources().getString(R.string.toastMsg);
+        String message = String.format(fmt,
+                b ? "Added" : "Removed",
+                titles[index],
+                b ? "to" : "from");
+        Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }
 }
